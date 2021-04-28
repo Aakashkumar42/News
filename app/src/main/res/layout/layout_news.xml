@@ -1,0 +1,66 @@
+<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
+    >
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/image_url"
+    android:src="@color/cardview_dark_background"
+    android:layout_width="match_parent"
+    android:layout_height="194dp"
+    android:scaleType="centerCrop"
+    android:contentDescription="@string/fab_transformation_scrim_behavior"
+    />
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    >
+    <TextView
+    android:text="title"
+    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+    android:id="@+id/textView_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Content"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/design_default_color_secondary"
+        android:id="@+id/textView_Content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Author"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/design_default_color_secondary"
+        />
+
+</LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:text="Click here"
+        android:textColor="@color/Btn_Color"
+        android:id="@+id/news_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        tools:ignore="OnClick" />
+</LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

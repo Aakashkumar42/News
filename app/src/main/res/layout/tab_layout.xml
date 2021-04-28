@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+   <androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/design_default_color_primary"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:popupTheme="@style/Theme.AppCompat.Light"
+
+       />
+
+  <com.google.android.material.tabs.TabLayout
+    android:id="@+id/tab_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:tabIndicatorColor="@color/white"
+     app:tabIndicatorHeight="2dp"
+      app:tabGravity="fill"
+      app:tabMode="fixed"
+      />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
